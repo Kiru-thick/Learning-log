@@ -1,0 +1,5 @@
+__pycache__/
+olt
+manage.py
+db.sqlite3
+.idea

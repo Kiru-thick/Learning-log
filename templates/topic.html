@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block header %}
+    <h3>
+        The topics are :
+    </h3>
+{% endblock header %}
+
+
+{% block content %}
+
+<body>
+
+<ul>
+    {% for topic in topics %}
+    <li>
+        <a href="{% url 'detail' topic.id %}">{{ topic|title }}</a> - <a href="{% url 'new_entry' topic.id%}">Add entry</a>
+    </li>
+    {% empty %}
+    <li>still in progress</li>
+    {% endfor %}
+</ul>
+<h3><a href="{% url 'new_topic' %}">Add new topic</a></h3>
+</body>
+{% endblock content %}

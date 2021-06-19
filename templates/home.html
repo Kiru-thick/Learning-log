@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load bootstrap3 %}
+{% block header %}
+  <div class="jumbotron">
+    <h1>Track your learning</h1>
+  </div>
+{% endblock header %}
+{% block content %}
+{% buttons %}
+<button type="button" data-toggle="collapse" data-target="#users" class="btn btn-info btn-lg">info</button>
+<div id="users" class="collapse">
+  This is page created for my own purpose.DO NOT MAKE FUN OF IT
+</div>
+{% endbuttons %}
+{% endblock content %}
