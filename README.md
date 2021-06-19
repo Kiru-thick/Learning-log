@@ -1,2 +1,2 @@
-# first-webpage
+# Learning log
 just an ordinary webpage
